@@ -273,27 +273,36 @@ body {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        gap: 1rem;
     }
-    
-    .nav-menu {
-        margin: 1rem 0;
+
+    .navbar-collapse {
+        display: none; 
     }
-    
-    .action-section {
-        flex-direction: column;
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
         text-align: center;
     }
-    
-    .action-right {
-        text-align: center;
-        margin-top: 2rem;
+
+    .navbar-toggler {
+        border: none; 
     }
-    
-    .products-grid {
-        grid-template-columns: 1fr;
+
+    .navbar-toggler-icon {
+        background-color: rgb(0, 226, 144); 
     }
 }
+
+
 
 .quantity-selector {
     display: flex;
